@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malik Mumbai Tips</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2118508109074950');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2118508109074950&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background:
+                radial-gradient(ellipse 70% 55% at 50% 45%, #0e4a52 0%, #072830 42%, #021418 100%);
+            color: #fff;
+            padding: 40px 16px;
+            overflow-x: hidden;
+        }
+
+        .wrap {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .card {
+            width: 100%;
+            padding: 28px 24px 26px;
+            border-radius: 28px;
+            background: rgba(8, 22, 28, 0.55);
+            backdrop-filter: blur(18px);
+            border: 1px solid rgba(80, 180, 170, 0.18);
+            box-shadow:
+                0 0 40px rgba(20, 140, 130, 0.12),
+                0 20px 50px rgba(0, 0, 0, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 999px;
+            background: #16352c;
+            color: #b7e4c7;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+
+        .profile-wrap {
+            position: relative;
+            width: 118px;
+            height: 118px;
+            margin: 0 auto 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-spinner {
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: conic-gradient(#4ade80, #14b8a6, #0e7490, #4ade80);
+            animation: spinBorder 2.4s linear infinite;
+            box-shadow: 0 0 22px rgba(74, 222, 128, 0.3);
+        }
+
+        .profile-spinner::after {
+            content: '';
+            position: absolute;
+            inset: 4px;
+            border-radius: 50%;
+            background: #072830;
+        }
+
+        .profile {
+            width: 104px;
+            height: 104px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: relative;
+            z-index: 2;
+            border: 3px solid #072830;
+        }
+
+        @keyframes spinBorder {
+            to { transform: rotate(360deg); }
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 13px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.82);
+            margin-bottom: 18px;
+        }
+
+        .timer {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .timer span {
+            color: #4ade80;
+            font-weight: 800;
+        }
+
+        .btn {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            padding: 14px 18px;
+            border-radius: 12px;
+            overflow: hidden;
+            background: linear-gradient(180deg, #6b3a18 0%, #3a1d0c 100%);
+            border: 1.5px solid rgba(255, 255, 255, 0.85);
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15px;
+            letter-spacing: 0.3px;
+            box-shadow: 0 0 22px rgba(74, 222, 128, 0.35);
+            animation: jump 1.35s ease-in-out infinite;
+            z-index: 1;
+        }
+
+        .btn .tg-icon {
+            color: #2aabee;
+            font-size: 18px;
+        }
+
+        .btn .tick {
+            color: #1da1f2;
+            font-size: 16px;
+        }
+
+        @keyframes jump {
+            0%, 55%, 100% { transform: translateY(0); }
+            20% { transform: translateY(-14px); }
+            35% { transform: translateY(0); }
+            45% { transform: translateY(-7px); }
+        }
+
+        .disclaimer {
+            margin-top: 18px;
+            font-size: 11px;
+            line-height: 1.55;
+            color: rgba(255, 255, 255, 0.55);
+            text-align: justify;
+        }
+
+        .footer {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+        }
+
+        @media (max-width: 420px) {
+            .card {
+                padding: 24px 18px 22px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .btn {
+                font-size: 13px;
+                padding: 13px 14px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrap">
+
+        <div class="card">
+
+            <div class="badge">Malik Mumbai Tips</div>
+
+            <div class="profile-wrap">
+                <span class="profile-spinner"></span>
+                <img src="profile.jpg" class="profile" alt="Malik Mumbai">
+            </div>
+
+            <h1>Malik Mumbai Tips</h1>
+            <p class="tagline">Honest analysis • Match insights • Community driven</p>
+
+            <div class="timer">
+                FREE JOINING ENDS IN <span id="count">15</span>s
+            </div>
+
+            <a class="btn" href="https://t.me/+JTrmHHtTLi9hOWU1" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-telegram-plane tg-icon"></i>
+                <span>Subscribe Free Click Now</span>
+                <i class="fa-solid fa-circle-check tick"></i>
+            </a>
+
+            <p class="disclaimer">
+                Disclaimer: This channel shares cricket updates, analysis, and general information for fans. It does not promote betting or gambling. No outcomes are guaranteed. Please verify independently and act responsibly.
+            </p>
+
+        </div>
+
+        <div class="footer">
+            © 2026 Malik Mumbai. All Rights Reserved.
+        </div>
+
+    </div>
+
+    <script>
+        let time = 15;
+        let counter = document.getElementById("count");
+
+        setInterval(() => {
+            time--;
+            counter.innerText = time;
+            if (time <= 0) {
+                window.location.href = "https://t.me/+JTrmHHtTLi9hOWU1";
+            }
+        }, 1000);
+    </script>
+
+</body>
+
+</html>
